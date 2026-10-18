@@ -1,0 +1,36 @@
+
+# Terraform downloads and local state
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Generated Lambda ZIP files
+*.zip
+
+# Sensitive Terraform variable files
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local environment and credentials
+.env
+.env.*
+*.pem
+*.key
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
