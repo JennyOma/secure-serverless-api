@@ -65,10 +65,18 @@ terraform -chdir=terraform validate
 GitHub Actions runs these checks automatically on pushes and pull requests.
 
 ## Project Status
-The infrastructure configuration validates locally, and five automated Lambda tests pass.
 
-**Live AWS deployment and end-to-end authentication testing are pending.**
+**Deployed, partially integration-tested and safely decommissioned — October 2026.**
 
+- Successfully deployed 15 AWS resources using Terraform.
+- Confirmed the API rejected unauthenticated requests with HTTP 401.
+- Passed five Python unit tests.
+- GitHub Actions CI pipeline passed.
+- Verified Cognito's first-login password challenge.
+- Authenticated POST and GET tests were not completed.
+- Destroyed all 15 AWS resources and confirmed Terraform state was empty.
+
+The source code remains on GitHub. AWS resources were removed to minimise ongoing costs.
 ## Future Improvements
 
 - Automated deployment after security approval
